@@ -1,2 +1,4 @@
 ^PyWrapper\.Rproj$
 ^\.Rproj\.user$
+^doc$
+^Meta$

@@ -1,0 +1,28 @@
+---
+title: "PyWrapper"
+author: "Szymon Maksymiuk"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# PyWrapper
+
+PyWrapper is a perfect tool for creating python model explainers! Everyone knows that python is terrbile and if we have to make a model in such a pathetic language, we should at least explain it in R.
+
+# Example
+
+```{r, eval = FALSE, error=FALSE, message=FALSE}
+library(PyWrapper)
+py_explain("model.pkl", "calssif", data = data[,-y], y = data[y])
+```

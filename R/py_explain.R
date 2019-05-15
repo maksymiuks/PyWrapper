@@ -26,7 +26,7 @@ py_explain <- function(path, task, data = NULL, y = NULL, label = tail(class(mod
   if(task == "regr"){
     predict_function = predict_regr
   }
-  explain(python_scikitlearn_gbm,
+  explain(model,
           data = data, y = y, label = label,
           predict_function = predict_function)
 
